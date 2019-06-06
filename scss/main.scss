@@ -8,8 +8,87 @@ body {
   scroll-behavior: smooth;
 }
 
-#container {
-  margin: 30px;
+@media (min-width: 800px) {
+  #container {
+    margin: 30px;
+  }
+}
+@media(max-width: 800px){
+  #projects .unskew {
+    margin: 0 !important;
+    width: 100%; 
+  }
+  #projects .unskew .project-cards {
+    flex-wrap: wrap;
+    justify-content: center !important;
+  }
+}
+@media (max-width: 500px) {
+
+  #projects .unskew h2 {
+    padding-top: 100px!important;
+  }
+  #projects {
+    height: 1500px !important;
+  }
+  #aboutMe .unskew {
+    .secondTitle {
+      font-size: 1.5rem !important;
+    }
+  }
+  #aboutMe .unskew .about-container .about-descriptions {
+    width: 100% !important;
+  }
+  #aboutMe .unskew .about-container .skillset {
+    display: flex !important;
+    justify-content: space-around !important;
+    width: 100% !important;
+    margin-top: 4rem !important;
+  }
+
+  #aboutMe .unskew .about-container {
+    flex-direction: column;
+
+    .about-descriptions {
+      text-align: center;
+
+      h4 {
+        font-size: 1rem !important;
+      }
+
+      p {
+        font-size: 0.7rem;
+      }
+    }
+  }
+
+  #skills {
+    height: 950px !important;
+  }
+  #skills .unskew .skill-cards {
+    flex-direction: column !important;
+    align-items: center !important;
+  }
+
+  #skills .unskew .skill-cards .cards {
+    height: 150px !important;
+    width: 200px !important;
+    margin-bottom: 25px;
+  }
+  #skills .unskew .skill-cards .cards i {
+    font-size: 2rem !important;
+    margin-bottom: 0px !important;
+  }
+  #skills .unskew .skill-cards .cards h4 {
+    font-size: 0.8rem !important;
+    margin-bottom: 0px !important;
+  }
+
+  #skills .unskew .skill-cards .cards li {
+    font-size: 0.8rem !important;
+    margin-bottom: 0px !important;
+  }
+ 
 }
 
 .color-container {
@@ -457,17 +536,17 @@ footer {
       display: flex;
       border-top: 1px solid #f1f1f1;
       padding-top: 2rem;
-        a{
-            text-decoration: none;
-        }
+      a {
+        text-decoration: none;
+      }
       h4 {
         margin: 0 25px;
         text-transform: uppercase;
         transition: all 0.4s;
         cursor: pointer;
 
-        &:hover{
-            color: grey;
+        &:hover {
+          color: grey;
         }
       }
     }
