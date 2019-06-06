@@ -13,10 +13,10 @@ body {
     margin: 30px;
   }
 }
-@media(max-width: 800px){
+@media (max-width: 800px) {
   #projects .unskew {
     margin: 0 !important;
-    width: 100%; 
+    width: 100%;
   }
   #projects .unskew .project-cards {
     flex-wrap: wrap;
@@ -24,9 +24,8 @@ body {
   }
 }
 @media (max-width: 500px) {
-
   #projects .unskew h2 {
-    padding-top: 100px!important;
+    padding-top: 100px !important;
   }
   #projects {
     height: 1500px !important;
@@ -88,7 +87,6 @@ body {
     font-size: 0.8rem !important;
     margin-bottom: 0px !important;
   }
- 
 }
 
 .color-container {
@@ -138,10 +136,36 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    .links {
+      display: flex;
+      width: 100%;
+      justify-content: flex-end;
+      height: 450px;
+      padding: 30px;
+      ul {
+        display: flex;
+        list-style: none;
+        a {
+          text-decoration: none;
+          color:white;
+        }
+        li {
+          padding: 10px;
+          text-transform: uppercase;
+          transition: all 0.4s;
+          cursor: pointer;
+          height: 50px;
 
+
+          &:hover {
+            color: grey;
+          }
+        }
+      }
+    }
     .title {
       text-align: center;
-      margin-bottom: 10rem;
+      margin-bottom: 20rem;
     }
     h1 {
       font-size: 4rem;
