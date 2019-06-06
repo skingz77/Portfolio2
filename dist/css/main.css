@@ -204,8 +204,7 @@ body {
       margin-bottom: 90px; }
     #projects .unskew .project-cards {
       display: flex;
-      justify-content: space-between;
-      flex-wrap: wrap; }
+      justify-content: space-between; }
       #projects .unskew .project-cards .p-card {
         margin-right: 20px;
         width: 350px;
